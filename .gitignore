@@ -16,3 +16,6 @@ out/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+log/
+target/
+*/src/main/resources/ 
