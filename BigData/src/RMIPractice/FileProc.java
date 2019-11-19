@@ -1,7 +1,5 @@
 package RMIPractice;
 
-import com.sun.org.omg.CORBA.ExceptionDescriptionHelper;
-import javax.annotation.processing.FilerException;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -74,7 +72,7 @@ public class FileProc extends UnicastRemoteObject implements FileProcInterface
 
     public static void main(String[] args) {
         Test tempObject = new Test();
-        tempObject.loadFile("D:\\\\OneDrive - Mindtree Limited\\\\Code\\\\Java\\\\BigData\\\\Data\\\\data.csv");
+        tempObject.loadFile("/home/sourabh/Studies/Code/Java/BigData/Data/data.csv");
     }
 
 }
