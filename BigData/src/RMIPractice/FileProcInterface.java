@@ -8,4 +8,7 @@ public interface FileProcInterface extends Remote{
     public int[] sum() throws RemoteException;
     public int[] avg () throws RemoteException;
     public int[] count() throws RemoteException;
+
+
+
 }
