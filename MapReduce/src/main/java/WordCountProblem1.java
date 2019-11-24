@@ -25,3 +25,4 @@ public class WordCountProblem1 {
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
+MapReduce.src.main.java.WordCountProblem1

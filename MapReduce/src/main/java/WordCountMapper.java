@@ -12,7 +12,8 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
         String[] wordList = line.split("\\s");
 
         for (String eachWord: wordList) {
-           context.write(new Text(eachWord.replaceAll("\\p{Punct}", "")), new IntWritable(1));
+            char[] eachCharacter = eachWord.replaceAll("[^a-zA-Z]", "").toLowerCase().toCharArray();
+           context.write(new Text(Character.toString(eachCharacter[0])), new IntWritable(eachWord.length()));
         }
 
     }
